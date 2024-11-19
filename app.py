@@ -21,4 +21,4 @@ else:
             st.error("ID inválido foi provisionado")
     except Exception as e:
         print(e)
-        st.error(f"Um erro aconteceu: {str(e)}")
+        st.error(f"Um erro aconteceu: {e}")
