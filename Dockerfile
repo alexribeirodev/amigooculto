@@ -1,8 +1,5 @@
 FROM python:3.12-slim
 
-ENV CRYPTO_KEY=$CRYPTO_KEY
-ENV NAMES=$NAMES
-
 WORKDIR /app
 
 COPY . .
