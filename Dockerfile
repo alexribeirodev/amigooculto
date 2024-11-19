@@ -9,4 +9,4 @@ RUN python generate_person_codes.py
 
 EXPOSE 8501
 
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.address=0.0.0.0"]
+ENTRYPOINT ["python", "generate_person_codes.py", "&&", "streamlit", "run", "app.py", "--server.address=0.0.0.0"]
