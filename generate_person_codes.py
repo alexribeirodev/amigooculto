@@ -5,7 +5,7 @@ from crypto_utils import encrypt_text
 
 
 def generate_person_codes():
-    names = os.getenv("NAMES", "Fulano,Ciclano,Beltrano")
+    names = os.getenv("NAMES", "Alex,Nayara,Divina,Reyner,Lorena,Lucineia,Antônio")
     names = names.split(",")
 
     df = pd.DataFrame({"name": names})
