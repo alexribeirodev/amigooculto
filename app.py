@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
+from logging import getLogger
 from crypto_utils import decrypt_text
+
+log = getLogger("app")
 
 st.set_page_config(page_title="Amigo Oculto de Natal")
 
@@ -20,5 +23,5 @@ else:
         else:
             st.error("ID inválido foi provisionado")
     except Exception as e:
-        print(e)
+        log.error(e)
         st.error(f"Um erro aconteceu: {e}")
