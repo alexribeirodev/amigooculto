@@ -21,3 +21,6 @@ def generate_person_codes():
     print(df)
 
     df.to_csv("names.csv", index=False)
+
+
+generate_person_codes()

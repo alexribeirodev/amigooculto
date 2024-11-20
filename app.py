@@ -2,12 +2,13 @@ import streamlit as st
 import pandas as pd
 from logging import getLogger
 from crypto_utils import decrypt_text
-from generate_person_codes import generate_person_codes
+
+# from generate_person_codes import generate_person_codes
 
 log = getLogger("app")
 log.setLevel("DEBUG")
 
-generate_person_codes()
+# generate_person_codes()
 
 st.set_page_config(page_title="Amigo Oculto de Natal")
 
