@@ -5,6 +5,7 @@ from crypto_utils import decrypt_text
 from generate_person_codes import generate_person_codes
 
 log = getLogger("app")
+log.setLevel("DEBUG")
 
 generate_person_codes()
 
@@ -27,4 +28,5 @@ else:
             st.error("ID inválido foi provisionado")
     except Exception as e:
         log.error(e)
+        print(e)
         st.error(f"Um erro aconteceu: {e}")
